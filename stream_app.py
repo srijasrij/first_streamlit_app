@@ -22,7 +22,7 @@ streamlit.header('Fruitvice Fruit Advice!')
 fruit_choice=streamlit.text_input('what fruit would you like to get information about?','kiwi')
 streamlit.write('the user entered',fruit_choice)
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/",+fruit_choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 
 
 
